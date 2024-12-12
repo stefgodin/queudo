@@ -5,12 +5,13 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"stefgodin/queudo/web"
 	"strconv"
 )
 
 func main() {
-	http.HandleFunc("/", handleYourMom)
-	http.HandleFunc("/edit", handleYourDad)
+	web.DefaultRouter.RegisterController(&web.ChannelCtrl{})
+
 	log.Fatal(http.ListenAndServe(":42069", nil))
 }
 

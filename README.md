@@ -1,15 +1,15 @@
 # Queudo
-This projek is fo fun. Plz don't asq.
+Another todo app with a new Queue system approach to help focusing (maybe it won't work idk)
 
 ## Build
 `go run .`
 
 ## Tech Stack
-  - Golang
-  - Sqlite
-  - Bulma
-  - Htmx
-  - Alpine
+  - Backend - Golang
+  - DB - Sqlite
+  - CSS - Bulma
+  - Frontend - Htmx
+  - Frontend - Alpine?
 
 The stack's objective is to allow quick development by removing the front-end build by using tools such as bulma, htmx, alpine and the backend setup of a full database server. I chose Golang just because I gotta try it serously at some point.
 
@@ -17,7 +17,8 @@ The stack's objective is to allow quick development by removing the front-end bu
 ### [ ] Phase 1: The Queue(tm)
 In this phase I can add and clear my todos comming from different channels. We need to focus on the fact that this app should help me focus on 1 to 3 tasks at a single moment to get them done.
 
-  - [ ] I can add channels and todos for those channels
+  - [ ] I can add channels
+  - [ ] I can add todos for those channels
   - [ ] I can view and clear todos of different channels from a single queue
   - [ ] Empty channels ask me to add something to them or disable them, because a channel should never be empty.
   - [ ] I have different channel grouping views (workspace)
